@@ -27,7 +27,7 @@
 
 /* Font */
 	@font: 'Droid Sans', arial, sans-serif;
-	
+
 	@small: 12px;
 	@medium: 15px;
 	@large: 24px;
@@ -43,7 +43,7 @@
 .clear-text-shadow { text-shadow: none; }
 .clear-box-shadow { box-shadow: none; }
 
-.hide { display: none; } 
+.hide { display: none; }
 .show { display: block; }
 .invisible { visibility: hidden; }
 .left { float: left; }
@@ -82,7 +82,7 @@ pre, code, kbd, samp { font-family: 'Courier New', monospace, sans-serif; }
 
 /* -:[ Remove text-shadow from text selection for better readability: http://twitter.com/miketaylr/status/12228805301  ]:- */
 ::-moz-selection{ background: @pink; color: @white; .clear-text-shadow; }
-::selection { background: @pink; color: @white; .clear-text-shadow; } 
+::selection { background: @pink; color: @white; .clear-text-shadow; }
 
 
 /*---------------------------------------------------------------------------------------------*\
@@ -96,7 +96,7 @@ pre, code, kbd, samp { font-family: 'Courier New', monospace, sans-serif; }
 	http://j.mp/bestclearfix
 	http://blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page
 \*---------------------------------------------------------------------------------------------------------*/
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
@@ -105,34 +105,34 @@ pre, code, kbd, samp { font-family: 'Courier New', monospace, sans-serif; }
 								Real styles start here
 \*----------------------------------------------------------------------------------*/
 
-body	{ 
-			/*	background: ; 
-				color: ; 
+body	{
+			/*	background: ;
+				color: ;
 				font: ..px @font;	*/
 		}
 
 
-header	{  
+header	{
 			.inside {  }
-			
-			nav	{  
-					ul	{  
-							li	{  
-									a	{  
+
+			nav	{
+					ul	{
+							li	{
+									a	{
 											&:hover {  }
 											&:active {  }
-										}	
+										}
 								}
 						}
-				}		
+				}
 		}
-		
-		
-#wrap 	{ 
+
+
+#wrap 	{
 
 		}
-	
-footer	{  
+
+footer	{
 			.inside {  }
 		}
 
@@ -145,9 +145,9 @@ footer	{
 
 
 /*	........................................................................
-	Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+	Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)
 	link: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
-	
+
 	Stop iOS and WinMobile from mobile-optimize the text:
 	link: http://j.mp/textsizeadjust
 		html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
@@ -157,17 +157,17 @@ footer	{
 
 /*----------------------------------------------------------------------------------------------*\
 										Print styles
-										
-	Inlined to avoid required HTTP connection - link: http://www.phpied.com/delay-loading-your-print-css/ 
+
+	Inlined to avoid required HTTP connection - link: http://www.phpied.com/delay-loading-your-print-css/
 \*----------------------------------------------------------------------------------------------*/
 @media print {
 				  * { background: transparent !important; color: #444 !important; .clear-text-shadow; }
 				  a, a:visited { color: #444 !important; text-decoration: underline; }
-				  a:after { content: " (" attr(href) ")"; } 
+				  a:after { content: " (" attr(href) ")"; }
 				  abbr:after { content: " (" attr(title) ")"; }
 				  .ir a:after { content: ""; }  /* Don't show links for images */
 				  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-				  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+				  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
 				  tr, img { page-break-inside: avoid; }
 				  @page { margin: 0.5cm; }
 				  p, h2, h3 { orphans: 3; widows: 3; }
@@ -175,8 +175,3 @@ footer	{
 			}
 
 
-nav ul li
-{
-    float: left;
-    list-style: none;
-}
