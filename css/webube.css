@@ -1,0 +1,294 @@
+/*
+ ** Société Webube : author BADIN Guillaume
+ */
+hr {
+  background: none !important;
+  border: none;
+  border-top: none;
+}
+body {
+  background-color: #CCC;
+}
+h2,
+h3,
+h3,
+h4 {
+  font-family: 'Open Sans', arial;
+  font-weight: 600;
+}
+body {
+  font-family: 'Open Sans', arial;
+}
+header {
+  background-image: url("img/header_line.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 74px;
+}
+header #logo {
+  background-image: url('img/logo_accueuil.png');
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 63px;
+  margin-top: 2px;
+}
+nav {
+  margin-top: 28px;
+}
+nav ul li {
+  padding: 0 0 0 20px;
+  float: left;
+  list-style: none;
+}
+nav ul li a, nav ul li a:link, nav ul li a:visited {
+  text-shadow: -1px -1px 1px #333333;
+  font-family: 'Open Sans';
+  font-size: 1.3em;
+  color: #f58220;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-shadow: 0 0 10px #ffffff;
+}
+#wrap #carroussel {
+  background-image: url('img/fond_carrousel.png');
+  width: 925px;
+  height: 424px;
+}
+#wrap #carroussel ul li {
+  list-style: none;
+}
+#wrap #carroussel ul li .text {
+  width: 280px;
+  height: 80px;
+  float: right;
+  margin: 108px 15px 0 0;
+}
+#wrap #carroussel ul li h2 {
+  text-shadow: -1px -1px 1px #333333;
+}
+#wrap #carroussel ul li p {
+  text-shadow: -1px -1px 1px #333333;
+  color: #a6a6a6;
+  margin-top: 10px;
+  font-family: 'Open Sans';
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+#wrap #carroussel ul li img {
+  float: left;
+  padding: 50px 0 0 45px;
+}
+#wrap #carroussel ol {
+  padding-top: 10px;
+  margin-left: -15px;
+  margin-top: 5px;
+}
+#wrap #carroussel ol li {
+  list-style: none;
+  float: left;
+  padding-left: 86px;
+}
+#wrap #carroussel ol li h1 {
+  font-size: 1.6em;
+  text-shadow: -1px -1px 1px black;
+  color: #a6a6a6;
+}
+#wrap #carroussel ol li a {
+  text-decoration: none;
+}
+#wrap #carroussel ol li a:hover h1 {
+  text-shadow: 0 0 10px #ffffff;
+}
+#wrap #bandeau-societe {
+  background-color: whitesmoke;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 10px 0 10px 0;
+}
+#wrap #bandeau-societe .container #bandeau-societe-content #logo_grand_webube {
+  background-image: url('img/logo_grand_webube.png');
+  background-repeat: no-repeat;
+  height: 280px;
+}
+#wrap #bandeau-societe .container #bandeau-societe-content #description {
+  margin: 40px 0 0 58px;
+}
+#wrap #bandeau-societe .container #bandeau-societe-content p {
+  text-shadow: -1px -1px 1px #cccccc;
+  color: #333333 33;
+  margin-top: 10px;
+  font-family: 'Open Sans';
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+#wrap #references-post-it {
+  margin-left: 90px;
+  height: 800px;
+}
+#wrap #references-post-it ul li {
+  background-image: url('img/post_it.png');
+  width: 243px;
+  height: 295px;
+  margin-top: 20px;
+  list-style: none;
+  text-align: justify;
+}
+#wrap #references-post-it ul li img {
+  margin: 15px 0 0 14px;
+}
+#wrap #references-post-it ul li .mini_desc {
+  margin-top: 10px;
+  text-align: center;
+}
+#mini_footer {
+  background-image: url("img/footer/footer_line.png");
+  background-repeat: repeat-x;
+  height: 50px;
+  width: 100%;
+}
+#big_footer {
+  background-image: url("img/footer/footer_big.jpg");
+  background-repeat: repeat-x;
+  height: 406px;
+  width: 100%;
+}
+h1 {
+  font-size: 3em;
+  color: #f58220;
+  text-shadow: -1px -1px 1px #4d4d4d;
+}
+h2 {
+  font-size: 2em;
+  color: #f58220;
+  text-shadow: -1px -1px 1px #4d4d4d;
+}
+h3 {
+  font-size: 4em;
+  color: #f58220;
+  text-shadow: -1px -1px 1px #4d4d4d;
+}
+h4 {
+  font-size: 1.5em;
+  color: #f58220;
+  text-shadow: -1px -1px 1px #4d4d4d;
+}
+.clean-green {
+  background-image: url('img/button_green.png');
+  width: 117px;
+  height: 15px;
+  padding: 14px;
+  background-repeat: no-repeat;
+  font-size: 1.0em;
+  text-shadow: -1px -1px 1px black;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.clean-green:hover {
+  background-image: url('img/button_green_hover.png');
+  color: white;
+}
+.clean-green:click {
+  background-image: url('img/button_green_clicked.png');
+}
+#logo_social ul li span {
+  text-indent: -5000px;
+  position: absolute;
+}
+#logo_social ul {
+  margin: 10px 0 0 0;
+  list-style-type: none;
+  padding: 0;
+  border: 0;
+}
+#logo_social li {
+  float: left;
+  list-style: none;
+  width: 29px;
+  height: 29px;
+}
+.sprite-logo_fb {
+  background: url(img/footer/sprite_logo_social.png) no-repeat top left;
+  background-position: 0 0;
+  width: 29px;
+  height: 29px;
+}
+.sprite-logo_fb:hover {
+  background-position: 0 -79px;
+  width: 29px;
+  height: 29px;
+}
+.sprite-logo_mail {
+  background: url(img/footer/sprite_logo_social.png) no-repeat top left;
+  background-position: 0 -158px;
+  width: 29px;
+  height: 29px;
+}
+.sprite-logo_mail:hover {
+  background-position: 0 -237px;
+  width: 29px;
+  height: 29px;
+}
+.sprite-logo_rss {
+  background: url(img/footer/sprite_logo_social.png) no-repeat top left;
+  background-position: 0 -316px;
+  width: 29px;
+  height: 29px;
+}
+.sprite-logo_rss:hover {
+  background: url(img/footer/sprite_logo_social.png) no-repeat top left;
+  background-position: 0 -395px;
+  width: 29px;
+  height: 29px;
+}
+.sprite-logo_twitter {
+  background: url(img/footer/sprite_logo_social.png) no-repeat top left;
+  background-position: 0 -474px;
+  width: 29px;
+  height: 29px;
+}
+.sprite-logo_twitter:hover {
+  background-position: 0 -553px;
+  width: 29px;
+  height: 29px;
+}
+.app-ocalypse {
+  background-image: url('img/logo_appocalypse.png');
+  text-indent: -5000px;
+  position: absolute;
+  margin-top: -10px;
+  width: 138px;
+  height: 37px;
+}
+#big_footer h1 {
+  text-shadow: -1px -1px 1px #333333;
+  font-size: 2em;
+}
+#big_footer a {
+  font-size: 1.2em;
+  text-shadow: -1px -1px 1px #333333;
+  color: #a6a6a6;
+  text-decoration: none;
+}
+#big_footer a:hover {
+  text-shadow: 0 0 10px #ffffff;
+}
+#big_footer ol {
+  margin-left: 50px;
+}
+#big_footer ol, #big_footer ul {
+  list-style-type: none;
+}
+#big_footer ol li {
+  margin-top: 20px;
+}
+#big_footer ul li {
+  margin-top: 10px;
+}
+.copyright p {
+  margin: 120px;
+  font-size: 1.2em;
+  text-shadow: -1px -1px 1px black;
+  color: #a6a6a6;
+  text-decoration: none;
+}

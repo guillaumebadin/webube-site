@@ -45,7 +45,7 @@
      <link rel="stylesheet/less" href="css/less.css?v=1" type="text/css">
      ]: -->
     <link rel="stylesheet/less" href="css/less.less" type="text/css">
-    <link rel="stylesheet/less" href="css/webube.less" type="text/css">
+    <link rel="stylesheet" href="css/webube.css" type="text/css">
 
     <!-- :[ Javascripts are all in the bottom of the document except for modernizr and LESS]: -->
 
@@ -58,11 +58,56 @@
     <script type="text/javascript" src="js/less.js"></script>
 
 
+    <style>
+        header
+        {
+            background-image: url("css/img/header_line.png");
+            background-repeat: repeat-x;
+            width: 100%;
+            height: 74px;
+        }
+    </style>
+
 </head>
 
 <!-- :[ Using body class for more control over styles ]: -->
 <body>
+<style>
 
+
+</style>
+
+<!--[if lt IE 7]>
+<div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+    <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#'
+                                                                                                           onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img
+            src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;'
+            alt='Close this notice'/></a></div>
+    <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+        <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg'
+                                                    alt='Warning!'/></div>
+        <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+            <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>Vous utilisez un navigateur dépassé
+                depuis près de 8 ans!</div>
+            <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>Pour une meilleure expérience web, prenez
+                le temps de mettre votre navigateur à jour.</div>
+        </div>
+        <div style='width: 75px; float: left;'><a href='http://fr.www.mozilla.com/fr/' target='_blank'><img
+                src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;'
+                alt='Get Firefox 3.5'/></a></div>
+        <div style='width: 75px; float: left;'><a
+                href='http://www.microsoft.com/downloads/details.aspx?FamilyID=341c2ad5-8c3d-4347-8c03-08cdecd8852b&DisplayLang=fr'
+                target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;'
+                                     alt='Get Internet Explorer 8'/></a></div>
+        <div style='width: 73px; float: left;'><a href='http://www.apple.com/fr/safari/download/' target='_blank'><img
+                src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;'
+                alt='Get Safari 4'/></a></div>
+        <div style='float: left;'><a href='http://www.google.com/chrome?hl=fr' target='_blank'><img
+                src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;'
+                alt='Get Google Chrome'/></a></div>
+    </div>
+</div>
+<![endif]-->
 
 <header>
     <!-- :[ We're using "inside" class here in case you have a full width header background, so the fixed width goes to .inside ]: -->
@@ -104,16 +149,18 @@
         <div id="carroussel">
             <ul>
                 <li>
-    <style>
-     
-    </style>
+                    <style>
+
+                    </style>
                     <div class="text">
                         <h2>Spécialiste mobile</h2>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.</p>
 
-                        <a href="#" style="text-decoration: none"> <div class="clean-green"> En Savoir Plus </div> </a>
+
+                        <button class="cupid-green right"> En Savoir Plus !</button>
+                        <!--<a href="#" style="text-decoration: none"> <div class="clean-green"> En Savoir Plus </div> </a>-->
 
                     </div>
 
@@ -143,8 +190,11 @@
                     <a href="#"><h1>Conseil</h1></a>
                 </li>
                 <li>
-
-                    <a href="#" ><img class="red" src="css/img/logo_appocalypse.png" width="138px" height="37px" style="margin-top: -10px;" /> <h1 class="hide">App-Ocalypse</h1></a>
+                    <div class="app-ocalypse">
+                        <a href="#">
+                            <div class="app-ocaplypse"><h1 class="hide">App-Ocalypse</h1></div>
+                        </a>
+                    </div>
                 </li>
             </ol>
 
@@ -154,8 +204,7 @@
 
     <br/>
     <br/>
-    <br/>
-    <br/>
+
 
     <div id="bandeau-societe">
 
@@ -179,6 +228,8 @@
                         labore et dolore magna aliqua.
 
                     </p>
+
+
                 </div>
 
             </div>
@@ -190,25 +241,20 @@
 
         <br/>
         <br/>
-        <br/>
-        <br/>
 
 
-        <h3 style="text-align: center;">Ils nous ont fait confiance!</h3>
+        <h3 style="text-align: center;">Nos Références</h3>
 
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+
 
         <div id="references-post-it" class="span-24">
 
             <ul class="span-7">
                 <li>
-                    <img src="#">
+                    <img src="css/img/reference/fink.png" width="210px" height="210px">
 
                     <div class="mini_desc">
                         <h4>Fink Mobile</h4>
@@ -217,10 +263,11 @@
                     </div>
                 </li>
                 <li>
-                    <img src="#">
+                    <img src="css/img/reference/fink.png" width="210px" height="210px">
 
                     <div class="mini_desc">
                         <h4>Fink Mobile</h4>
+
                         <p> Développements multi-plateforme</p>
                     </div>
                 </li>
@@ -228,35 +275,37 @@
 
             <ul class="span-7">
                 <li>
-                    <img src="#">
+                    <img src="css/img/reference/make_me_reach.jpg" width="210px" height="210px">
 
                     <div class="mini_desc">
-                        <h4>Fink Mobile</h4>
-                        <p> Développements multi-plateforme</p>
+                        <h4>MakeMeReach</h4>
+
+                        <p>Facebook, Web Social pour spartoo</p>
                     </div>
                 </li>
                 <li>
-                    <img src="#">
+                    <img src="css/img/reference/fink.png" width="210px" height="210px">
 
                     <div class="mini_desc">
                         <h4>Fink Mobile</h4>
-                        <p> Développements multi-plateforme</p>
+
+                        <p>Développements multi-plateforme</p>
                     </div>
                 </li>
             </ul>
 
             <ul class="span-7">
                 <li>
-                    <img src="#">
+                    <img src="css/img/reference/wakizz.png" width="210px" height="210px">
 
                     <div class="mini_desc">
-                        <h4>Fink Mobile</h4>
+                        <h4>Wakizz</h4>
 
-                        <p> Développements multi-plateforme</p>
+                        <p>Facebook, WebSocial</p>
                     </div>
                 </li>
                 <li>
-                    <img src="#">
+                    <img src="css/img/reference/fink.png" width="210px" height="210px">
 
                     <div class="mini_desc">
                         <h4>Fink Mobile</h4>
@@ -274,16 +323,94 @@
 
 
 <footer>
-    <div id="mini_footer">
 
+
+    <div id="mini_footer" style="position: fixed;">
+        <div id="logo_social" class="container" style="margin-top: 0px!important;">
+            <ul class="span-24">
+                <li class="span-1">
+
+                    <div class="sprite-logo_fb">
+                        <span>facebook</span>
+                    </div>
+
+                </li>
+                <li class="span-2">
+                    <div class="sprite-logo_twitter">
+                        <span>twitter</span>
+                    </div>
+
+                </li>
+                <li class="span-3">
+                    <div class="sprite-logo_mail">
+                        <span>Contactez nous par mail</span>
+                    </div>
+
+                </li>
+                <li class="span-4">
+                    <div class="sprite-logo_rss">
+                        <span>Suivez notre flux rss</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
     </div>
+    <style>
 
+    </style>
     <div id="big_footer">
         <section class="inside container">
 
-            <!-- :[ Inside class here exists for the same purpose of the inside class of the header ]: -->
-            <!-- :[ You can also add HTML5 badge here from W3C schools :) ]: -->
+            <br/>
+            <br/>
+
+
+            <ol class="span-24">
+                <li class="span-6">
+                    <h1>A propos</h1>
+                    <ul>
+                        <li><a href="societe">Qui Sommes nous?</a></li>
+                        <li><a href="societe#culture">Culture</a></li>
+                        <li><a href="societe#equipe"> Notre équipe</a></li>
+                    </ul>
+                </li>
+                <li class="span-6">
+                    <h1>Métiers</h1>
+                    <ul>
+                        <li><a href="mobile">Mobile multi-platforme</a></li>
+                        <li><a href="web-social">WebSocial</a></li>
+                    </ul>
+                </li>
+                <li class="span-6">
+                    <h1>Références</h1>
+                    <ul>
+                        <li><a href="references#fink"> Fink Mobile</a></li>
+                        <li><a href="references#makemereach">MakeMeReach</a></li>
+                        <li><a href="references#wakizz">Wakizz</a></li>
+                        <li><a href="references#drivesouthafrica">Drive South Africa</a></li>
+                        <li><a href="references#cricel">Cricel</a></li>
+                        <li><a href="references#uc">UC</a></li>
+                    </ul>
+                </li>
+                <li class="span-5">
+                    <h1>Recrutement</h1>
+                    <ul>
+                        <li><a href="recrutement"> Postulez !</a></li>
+                        <li><a href="recrutement#rd"> Découvrez notre R&D</a></li>
+                        <li><a href="recrutement#projet">Chef de projet Développeur</a></li>
+                        <li><a href="recrutement#stage">Trouvez votre Stage</a></li>
+                    </ul>
+                </li>
+            </ol>
+
         </section>
+        <div class="copyright">
+            <p style="text-align: center;">
+                © 2011–2011 <strong>WebUbe</strong>, <strong>App-Ocalypse</strong>
+            </p>
+        </div>
+
     </div>
 
 
@@ -306,6 +433,58 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 9]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
+
+<style>
+    @media only screen and (max-device-width:1024px)
+    {
+
+        .scroll-menu
+        {
+            display: none;
+        }
+    }
+
+</style>
+
+
+<style>
+
+
+    body
+    {
+        margin: 0;
+        padding: 0 0 0px 0;
+    }
+
+    div#mini_footer
+    {
+
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    @media screen
+    {
+        body>div#mini_footer
+        {
+            position: fixed;
+        }
+    }
+
+    * html body
+    {
+        overflow: hidden;
+    }
+
+    * html div#content
+    {
+        height: 100%;
+        overflow: auto;
+    }
+
+</style>
 
 
 </body>
